@@ -1,279 +1,85 @@
 <meta="" charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" <link="" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite|Handlee" rel="stylesheet" type="text/css">
     <style>
-                .centered {
+        /* facebook button class*/
+        
+        @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+        #social {
+            margin: 20px 0px;
             text-align: center;
         }
- 
-       
-        /* ==========================================================================
-   Wrap Sections
-   ========================================================================== */
         
-        #headerwrap {
-            background-color: #34495e;
-            padding-top: 60px;
-        }
-        
-        #headerwrap h1 {
-            margin-top: 30px;
-            color: white;
-            font-size: 70px;
-        }
-        
-        #headerwrap h3 {
-            color: white;
-            font-size: 30px;
-        }
-        
-        #headerwrap h5 {
-            color: white;
-            font-weight: 700;
-            text-align: left;
-        }
-        
-        #headerwrap p {
-            text-align: left;
-            color: white
-        }
-        /* intro Wrap */
-        
-        #intro {
-            padding-top: 50px;
-            border-top: #bdc3c7 solid 5px;
-        }
-        
-        #features {
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        
-        #features .ac a {
-            font-size: 20px;
-        }
-        /* Showcase Wrap */
-        
-        #showcase {
-            display: block;
-            background-color: #34495e;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        
-        #showcase h1 {
-            color: white;
-        }
-        
-        #footerwrap {
-            background-color: #2f2f2f;
-            color: white;
-            padding-top: 40px;
-            padding-bottom: 60px;
-            text-align: left;
-        }
-        
-        #footerwrap h3 {
-            font-size: 28px;
-            color: white;
-        }
-        
-        #footerwrap p {
-            color: white;
-            font-size: 18px;
-        }
-        /* Copyright Wrap */
-        
-        #c {
-            background: #222222;
-            padding-top: 15px;
-            text-align: right;
-        }
-        
-        #c p {
-            color: white
-        }
-       
-        
-        .stepwizard-step p {
-            margin-top: 10px;
-        }
-        
-        .process-row {
-            display: table-row;
-        }
-        
-        .process {
-            display: table;
-            width: 100%;
-            position: relative;
-        }
-        
-        .process-step button[disabled] {
-            opacity: 1 !important;
-            filter: alpha(opacity=100) !important;
-        }
-        
-        .process-row:before {
-            top: 50px;
-            bottom: 0;
-            position: absolute;
-            content: " ";
-            width: 100%;
-            height: 1px;
-            background-color: #ccc;
-            z-order: 0;
-        }
-        
-        .process-step {
-            display: table-cell;
-            text-align: center;
-            position: relative;
-        }
-        
-        .process-step p {
-            margin-top: 10px;
-        }
-        
-        .btn-circle {
-            width: 100px;
-            height: 100px;
-            text-align: center;
-            padding: 6px 0;
-            font-size: 12px;
-            line-height: 1.428571429;
-            border-radius: 15px;
-        }
-
-/* 
-        
-   .portfolio-item {
-  overflow:hidden;
-  padding: 7px;
-  color: white;
-  height: 308px;
-}
-*/    
-
-
-    /*Portfolio items*/
-        
-        #portfolio .portfolio-item {
-            margin: 0 0 15px;
-            right: 0;
-            border: 1px outset rgba(255, 255, 255, 0.6);
-        }
-        
-        #portfolio .portfolio-item:hover {
-            transition: 0.5s;
-            box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.9);
-        }
-        
-        #portfolio .portfolio-item .portfolio-link {
-            display: block;
-            position: relative;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-            background: rgba(0, 0, 0, .7);
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: all ease .5s;
-            -webkit-transition: all ease .5s;
-            -moz-transition: all ease .5s,
-        }
-        
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-            opacity: 1;
-        }
-        
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-            position: absolute;
-            width: 100%;
-            height: 20px;
-            font-size: 20px;
-            text-align: center;
-            top: 50%;
-            margin-top: -12px;
-            color: #fff;
-        }
-        
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-            margin-top: -12px;
-        }
-        
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-            margin: 0;
-        }
-        
-        #portfolio .portfolio-item .portfolio-caption {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: rgba(0, 0, 0, 0.8);
-            text-align: center;
-            padding: 25px;
-        }
-        
-        #portfolio .portfolio-item .portfolio-caption h4 {
-            color: #fff;
-            text-transform: none;
-            margin: 0;
-        }
-        
-        #portfolio .portfolio-item .portfolio-caption p {
-            font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-style: italic;
-            font-size: 13px;
-            margin: 0;
-        }
-        
-        #portfolio * {
-            z-index: 2;
-        }
-        
-        @media (min-width:767px) {
-            #portfolio .portfolio-item {
-                margin: 0 0 0px;
-            }
-        }
-        
-        .card {
-            min-height: 200px;
-            width: 200px;
-            background-color: #FFF5D8;
-            margin: 30px;
-            border-radius: 12px;
-            box-shadow: 0px 28px 35px -19px rgba(151, 156, 156, 0.85);
-            font-family: 'Handlee', cursive;
-        }
-        
-        .card-container {
-            text-align: center;
-            margin: 40px;
-        }
-        
-        .cardh1 {
-            text-align: center;
-            font-family: 'Special Elite', cursive;
-            letter-spacing: 0.3em;
-        }
-        
-        .vcenter {
+        .smGlobalBtn {
+            /* global button class */
             display: inline-block;
-            vertical-align: middle;
-            float: none;
+            position: relative;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 2px 2px #999;
+            padding: 0px;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+            font-weight: normal;
+            line-height: 2em;
+            border-radius: 25px;
+            -moz-border-radius: 25px;
+            -webkit-border-radius: 25px;
+        }
+        /* facebook button class*/
+        
+        .facebookBtn {
+            background: #4060A5;
         }
         
-        card.p {
-            padding-top: 100px;
+        .facebookBtn:before {
+            /* use :before to add the relevant icons */
+            font-family: "FontAwesome";
+            content: "\f09a";
+            /* add facebook icon */
+        }
+        
+        .facebookBtn:hover {
+            color: #4060A5;
+            background: #fff;
+        }
+        /* twitter button class*/
+        
+        .twitterBtn {
+            background: #00ABE3;
+        }
+        
+        .twitterBtn:before {
+            font-family: "FontAwesome";
+            content: "\f099";
+            /* add twitter icon */
+        }
+        
+        .twitterBtn:hover {
+            color: #00ABE3;
+            background: #fff;
+        }
+        /* instagram plus button class*/
+        
+        .instagramplusBtn {
+            background: #517fa4;
+        }
+        
+        .instagramplusBtn:before {
+            font-family: "FontAwesome";
+            content: "\f16d";
+            /* add googleplus icon */
+        }
+        
+        .instagramplusBtn:hover {
+            color: #e64522;
+            background: #fff;
         }
         
         body {
@@ -298,20 +104,6 @@
             margin-bottom: 10px;
         }
         
-        .main {
-            height: 550px;
-            padding-top: 0px;
-            background-image: url("https://www.justbeauty.co.uk/images/pipkin-100-organic-raw-extra-virgin-coconut-oil-pure-cold-pressed-unrefined-500ml-p5837-40124_image.jpg");
-            background-size: cover;
-        }
-        
-        .jumbotron {
-            background-color: #6B8E23;
-            color: #fff;
-            padding: 30px 10px;
-            font-family: Montserrat, sans-serif;
-        }
-        
         .bg-grey {
             background-color: #f6f6f6;
         }
@@ -321,23 +113,6 @@
             font-size: 30px;
         }
         
-        .logo {
-            color: #66720f;
-            font-size: 200px;
-        }
-        
-        .thumbnail {
-            padding: 0 0 10apx 0;
-            border: none;
-            border-radius: 0;
-        }
-        
-        .thumbnail img {
-            width: 100%;
-            height: 100%;
-            margin-bottom: 10px;
-        }
-        
         .container-fluid {
             padding: 10px 10px;
         }
@@ -345,411 +120,154 @@
         .bullets {
             padding: 50px 10px !important;
         }
-        
-        .item h4 {
-            font-size: 19px;
-            line-height: 1.375em;
-            font-weight: 400;
-            font-style: italic;
-            margin: 70px 0;
-        }
-        
-        .item span {
-            font-style: normal;
-        }
-        
-        .panel {
-            border: 1px solid #303030;
-            border-radius: 0 !important;
-            transition: box-shadow 0.5s;
-        }
-        
-        .panel:hover {
-            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
-        }
-        
-        .panel-footer .btn:hover {
-            border: 1px solid #303030;
-            background-color: #fff !important;
-            color: #f4511e;
-        }
-        
-        .panel-heading {
-            color: #fff !important;
-            background-color: #303030 !important;
-            padding: 0px;
-            border-bottom: 1px solid transparent;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-        }
-        
-        .panel-footer {
-            background-color: white !important;
-        }
-        
-        .panel-footer h3 {
-            font-size: 32px;
-        }
-        
-        .panel-footer h4 {
-            color: #aaa;
-            font-size: 14px;
-        }
-        
-        .panel-footer .btn {
-            margin: 15px 0;
-            background-color: #f4511e;
-            color: #fff;
-        }
-        
-        footer .glyphicon {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #89981d;
-        }
-        
-        .slideanim {
-            visibility: hidden;
-        }
-        
-        .slide {
-            animation-name: slide;
-            -webkit-animation-name: slide;
-            animation-duration: 1s;
-            -webkit-animation-duration: 1s;
-            visibility: hidden;
-        }
-        
-        .description {
-            position: absolute;
-            /* To specify exact placement*/
-            bottom: 0;
-            /* Position on bottom */
-            left: 0;
-            width: 100%;
-            /* background styling */
-            background-color: #000;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: #fff
-        }
-        
-        .description_content {
-            padding: 20px 10px;
-            margin:0 .vertical-align {
-                display: flex;
-                align-items: center;
-            }
-            .vertical-align {
-                display: flex;
-                align-items: center;
-                @keyframes slide {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(70%);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0%);
-                    }
-                }
-                @-webkit-keyframes slide {
-                    0% {
-                        opacity: 0;
-                        -webkit-transform: translateY(70%);
-                    }
-                    100% {
-                        opacity: 1;
-                        -webkit-transform: translateY(0%);
-                    }
-                }
-                @media screen and (max-width: 768px) {
-                    .col-sm-4 {
-                        text-align: center;
-                        margin: 55px 0;
-                    }
-                    .btn-lg {
-                        width: 100%;
-                        margin-bottom: 35px;
-                    }
-                }
-                @media screen and (max-width: 480px) {
-                    .logo {
-                        font-size: 150px;
-                    }
-                }
-                .row {
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                }
-                .row > [class*='col-'] {
-                    display: flex;
-                    flex-direction: column;
-                }
     </style>
     <!-- Container (About Section) -->
     <div id="about" class="container-fluid ">
         <div class="row">
-            <div class="col-sm-8">
-                <h1><img src="https://justbeauty-uk.s3.amazonaws.com/shillslogo2.jpg" alt="Moisturiser" class="img-responsive  margin" style="color: inherit; font-family: inherit; text-transform: uppercase; font-size: 15px; line-height: 1.8; width: 25%;"></h1>
-                <h2><font color="#4ed5bb ">Shills purifying peel-off black mask</font></h2>
-                <h4>The original Shills is finally here!f</h4>
-                <p>With legions of fans, the original black peel-off mask from Shills is here. Shills Deep Cleansing Purifying Peel-Off Black Face Mask has earned its superstar status by being the ultimate blackhead-buster. Specially-formulated to unblock clogged pores by peeling blackheads, dirt and spot-causing bacteria away.&nbsp;</p>
-                <p>Activated bamboo charcoal acts like a magnet to draw out the most deeply-rooted impurities while naturally-derived ingredients calendula, rosemary and grapefruit help to re-balance and restore a glowing complexion.</p>
-            </div>
-            <div class="col-sm-4"> <img src="http://justbeauty-uk.s3.amazonaws.com/shillspaste.jpg" alt="Moisturiser" class="img-responsive hidden-xs img-circle margin" style="width:100%"> </div>
+            <div class="col-sm-8"> <img src="https://static.wixstatic.com/media/68da27_bb8eca3254574035a21bcf25958487f8~mv2.png/v1/fill/w_320,h_124,al_c,usm_0.66_1.00_0.01/68da27_bb8eca3254574035a21bcf25958487f8~mv2.png" alt="Moisturiser" "class="img-responsive img-circle margin " style="width:30% ">
+          <h2><font color="#99cc00 ">Pipkin 100% Organic Raw Extra-Virgin Coconut Oil</font></h2><h4>RAW, extra-virgin and unprocessed Coconut Oil. No nasty additives, Pipkin is pure coconut, cold-pressed and sourced from tropical Sri Lanka</h4>
+          <p>A beautiful <b>mild</b> taste, great for frying, roasting, baking whilst providing an added <b>health</b> <b>boost</b> to your cooking. This <b>nutritionally-rich</b> oil is packed with medium-chain <b>triglycerides</b> (the good kind of fat) and <b>lauric acid</b> (kills nasty micro-organisms).&nbsp;</p><p>Perfect, not only for your kitchen but also as part of your <b>beauty range</b>, this <b>multitasking</b> <b>oil</b> is truly a jar of wonders. Put Pipkin in your <b>cooking</b>, put it in your <b>hair</b> – the product for use (almost) anywhere, everywhere.&nbsp;</p></div>
+        <div class="col-sm-4 ">
+         <img src="http://justbeauty-uk.s3.amazonaws.com/pipkin_coconuts.jpg " alt="Moisturiser " "class="img-responsive img-circle margin" style="width:100%"> </div>
         </div>
     </div>
-    <div class="container-fluid bg-grey">
+    <div class="container-fluid hidden-xs bg-grey">
         <div class="row">
-            <div class="col-sm-4">
-                <br><img src=" http://justbeauty-uk.s3.amazonaws.com/QC595969_5.jpg" class="img-responsive img-circle margin" style="width:100%" alt="Moisturiser"> </div>
+            <div class="col-sm-4"> <img src=" http://justbeauty-uk.s3.amazonaws.com/sm_spoon_oil.jpg" class="img-responsive img-circle margin" style="width:100%" alt="Moisturiser"> </div>
             <div class="col-sm-8">
-                <h2><font color="#ce2065"><span style="font-size: 19px; font-weight: normal;">HSNF Ltd. (trading as Just Beauty) is the sole authorised distributor of Taiwan’s well known skincare and cosmetics brand Shills for the United Kingdom.</span></font></h2>
-                <p>Due to the popularity of the Shills brand, you’re likely to come across a barrage of counterfeit listings claiming to be authentic. We encourage our customers to be wary of this because the ingredients and production processes of replicas are not properly certified and should be avoided at all costs.</p>
-                <p>For your piece of mind, the manufacturer and rights owner of Shills provides a way for customers to verify the authenticity of every Shills product. On a genuine Shills Black mask, you will find an anti-counterfeit holographic sticker accompanied by a serial number. Use the link below to enter your unique serial number in the Shills website authenticity checker, and be confident that you’ve purchased a genuine product.</p>
-                <p><a href="https://pay.ebay.co.uk/xo?action=view&sessionid=543736375019" class="btn btn-danger btn-lrg" role="button" style="line-height: 1.42857;">Buy Now</a></p>
+                <h2><span style="font-family: inherit; line-height: 1.1;">Meet <font color="#339966">Pipkin..</font></span></h2>
+                <h4><span style="color: rgb(129, 129, 129); font-size: 15px;">It was one of those moments. Like an apple falling on Isaac Newton’s head but in our case it was coconuts. When we visited Sri Lanka, we saw people using coconut oil for everything – cooking, moisturising, haircare.&nbsp;</span></h4>
+                <h4><span style="color: rgb(129, 129, 129); font-size: 15px;">A superfood, they said, an elixir, the stuff of life. We tried it, loved it, set up a nice factory, helped change people’s lives, brought coconut products back home. They swear by it; so do we; we think you will too.</span></h4><span style="font-size: 15px;"><b><font color="#000000">Look us up on social media for more</font></b></span>
+                <br>
+                <div id="social" style="text-align: left;">
+                    <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/pipkinUK"></a>&nbsp; &nbsp;&nbsp;
+                    <a class="twitterBtn smGlobalBtn" href="https://twitter.com/pipkinUK"></a>&nbsp; &nbsp;&nbsp;
+                    <a class="instagramplusBtn smGlobalBtn" href="https://www.instagram.com/pipkinuk/"></a>&nbsp;</div>
             </div>
         </div>
     </div>
-    <div id="portfolio" class="container-fluid text-center ">
-        <h2><font color="#ce2065">the shills black mask</font><br><font size="1">&nbsp;</font></h2>
+    <div id="services" class="container-fluid text-center bullets ">
         <div class="row">
-            <div class="col-sm-3 col-xs-6"> <img src="http://justbeauty-uk.s3.amazonaws.com/shillspoint1.jpg" class="img-responsive img-thumbnail img-circle margin" alt="Image" style="text-align: center; width: 60%;">
-                <p style="text-align: center;"><span style="line-height: 1.8;">The latest trend in skincare.&nbsp;</span>Proven results with the word’s best selling black mask - loved by beauty bloggers, as seen on YouTube</p>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6"> <span class="glyphicon glyphicon-ok-circle logo-small"></span>
+                        <h4>Certified 100% <p></p>Organic Product</h4> </div>
+                    <div class="col-xs-6 col-md-6"> <span class="glyphicon glyphicon-ok-circle logo-small"></span>
+                        <h4>Raw Extra-virgin<p></p>Cold-pressed</h4> </div>
+                    <div class="col-xs-6 col-md-6"> <span class="glyphicon glyphicon-ok-circle logo-small"></span>
+                        <h4>Completely Free of <p></p>Preservatives</h4></div>
+                    <div class="col-xs-6 col-md-6"> <span class="glyphicon glyphicon-ok-circle logo-small"></span>
+                        <h4>Unbleached, <p></p>unprocessed unrefined</h4> </div>
+                    <div class="col-xs-6 col-md-6"> <span class="glyphicon glyphicon-ok-circle logo-small"></span>
+                        <h4>Suitable for <p></p>vegetarians and vegans</h4> </div>
+                    <div class="col-xs-6 col-md-6"> <span class="glyphicon glyphicon-ok-circle logo-small"></span>
+                        <h4>dairy-free, gluten-free<p></p>Cholesterol-free</h4> </div>
+                </div>
             </div>
-            <div class="col-sm-3 col-xs-6"> <img src="http://justbeauty-uk.s3.amazonaws.com/shillspoint2.jpg" class="img-responsive img-thumbnail img-circle margin" alt="Image" style="text-align: center; width: 60%;">
-                <p><span style="line-height: 1.8;">Activated charcoal quickly and effectively pulls blackheads from the root and aids skin regeneration. Promotes healthy skin too!</span></p>
+            <div class="col-md-4 hidden-xs "> <img src="http://justbeauty-uk.s3.amazonaws.com/choppingboard.jpg" class="img-responsive margin" alt="Image" style="text-align: center; width: 100%;"> </div>
+        </div>
+    </div>
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+        <h2><font color="#339966">COUNTLESS Uses </font>- Here are just a few...<br><font size="1">&nbsp;</font></h2>
+        <div class="row">
+            <div class="col-sm-3"> <img src="http://justbeauty-uk.s3.amazonaws.com/sm_potato.jpg" class="img-responsive margin" alt="Image" style="text-align: center; width: 100%;">
+                <p style="text-align: center;"><b><font color="#339966">For Cooking</font></b></p>
+                <p style="text-align: center;"><font color="#000000">As a healthy cooking oil. Replace your regular cooking oil when frying, roasting and baking for an instant healthy boost. With a high smoke point, Pipkin retains all it’s beneficial goodness.</font>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+                <p></p>
             </div>
-            <div class="col-sm-3 col-xs-6"> <img src="http://justbeauty-uk.s3.amazonaws.com/shillspoint3.jpg" class="img-responsive img-thumbnail img-circle margin" style="text-align: center; width: 60%;">
-                <p><span style="line-height: 1.8;">Brightening naturally-derived ingredients calendula, rosemary and grapefruit help restore a plump, youthful complexion.</span></p>
+            <div class="col-sm-3"> <img src="http://justbeauty-uk.s3.amazonaws.com/sm_skin.jpg" class="img-responsive margin" alt="Image" style="text-align: center; width: 100%;">
+                <p><b><font color="#339966">For Beauty</font></b></p>
+                <p><font color="#000000">In your hair, skin, nails and body. Coconut Oil makes an intensively moisturising hair mask – pop on and leave overnight. Use a cleanser for a natural and speedy make up removal, leaving skin looking glowing and moisturised.</font>
+                    <br>
+                    <br>
+                </p>
+                <p></p>
             </div>
-            <div class="col-sm-3 col-xs-6"> <img src="http://justbeauty-uk.s3.amazonaws.com/shillspoint2.jpg" class="img-responsive img-thumbnail img-circle margin" style="text-align: center; width: 60%;" alt="Image">
-                <p><span style="line-height: 1.8;">Deeply penetrates the pores to remove acne-causing oil, which is also the main cause of acne outbreaks. Three more words.</span></p>
+            <div class="col-sm-3"> <img src="http://justbeauty-uk.s3.amazonaws.com/sm_baby.jpg" class="img-responsive margin" style="text-align: center; width: 100%;">
+                <p><font color="#339966"><b>For Your Family</b>
+</font></p>
+                <p><font color="#000000">A natural way to soothe your baby’s nappy rash and great for adding nutrition to kids diets.</font></p>
+                <p><font color="#000000">Pop it in your kids smoothies for a delicious superfood drink.&nbsp;</font></p>
                 <p>
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div class="col-sm-3"> <img src="http://justbeauty-uk.s3.amazonaws.com/sm_dog.jpg" class="img-responsive margin" style="text-align: center; width: 100%;" alt="Image">
+                <p><font color="#339966"><b>For Your Pets</b>
+</font></p>
+                <p><font color="#000000">Coconut oil is great for healthy cats and dogs Pipkin will condition the coat and nourish the skin. Can be used to clean gums and teeth and can improve energy and metabolism! Pups love Pipkin because it tastes yummy too!</font>
+                    <br>
                     <br>
                 </p>
             </div>
         </div>
     </div>
-    <div class="container-fluid text-center bg-grey">
-        <h2><font color="#ce2065">DIRECTIONS FOR USE</font><br><font size="1">&nbsp;</font></h2>
-        <div class="row-fluid">
-            <div class="row">
-                <div class="col-lg-12"> </div>
-            </div>
-            <!-- /.row -->
-            <!-- Projects Row -->
-            <div class="row">
-                <div class="col-md-1 col-sm-1"> </div>
-                <div class="col-sm-5 ">
-                    <a href="#"> <img class="img-responsive img-thumbnail " src="http://justbeauty-uk.s3.amazonaws.com/shills_step1.png" alt=""> </a>
-                </div>
-                <div class="col-sm-5 ">
-                    <a href="#"> <img class="img-responsive img-thumbnail" src="http://justbeauty-uk.s3.amazonaws.com/shills_step2.png" alt=""> </a>
-                </div>
-                <div class="col-md-6 "> </div>
-            </div>
-            <br>
-            <!-- /.row -->
-            <!-- Projects Row -->
-            <div class="row">
-                <div class="col-md-1 col-sm-1"> </div>
-                <div class=" col-sm-5 ">
-                    <a href="#"> <img class="img-responsive img-thumbnail" src="http://justbeauty-uk.s3.amazonaws.com/shills_step3.png" alt=""> </a>
-                </div>
-                <div class="col-sm-5 ">
-                    <a href="#"> <img class="img-responsive img-thumbnail" src="http://justbeauty-uk.s3.amazonaws.com/shills_step4.png" alt=""></a>
-                </div>
-                <div class="col-md-1 col-sm-1"> </div>
-            </div>
-            <!-- /.row -->
-        </div>
-    </div>
     <div class="container-fluid bg-2 text-center">
-        <h3 class="margin"><span style="color: inherit; font-family: inherit; font-size: 24px; font-weight: 500; line-height: 1.1; text-align: center; background-color: rgb(255, 255, 255);">&nbsp; &nbsp;Be Sure to Check out Shills UK on Social Media</span></h3>
-        <p style="text-align: center;">Send us a before and after shot and win a duo pack of Shills Black mask. Please post this to our Facebook or Twitter page - the winner will be announced on New Year’s Eve.</p> <a href="https://pay.ebay.co.uk/xo?action=view&sessionid=543736375019" class="btn btn-danger btn-lrg" role="button">Buy Now</a></div>
-    <div style="text-align: center;">
-        <hr> </div>
-</meta="">
-<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
-<div class="container-fluid bg-grey">
-    <div class="process">
-        <div class="process-row">
-            <div class="process-step">
-                <button type="button" class="btn  btn-success btn-circle"><i class="fa fa-facebook fa-3x"></i></button>
-                <p>Facebook</p>
-            </div>
-            <div class="process-step">
-                <button type="button" class="btn  btn-success btn-circle"><i class="fa fa-twitter fa-3x"></i></button>
-                <p>Twitter</p>
-            </div>
-            <div class="process-step">
-                <button type="button" class="btn  btn-success btn-circle"><i class="fa fa-instagram fa-3x"></i></button>
-                <p>Instagram</p>
-            </div>
+        <h3 class="margin"><span style="color: inherit; font-family: inherit; font-size: 24px; font-weight: 500; line-height: 1.1; text-align: center; background-color: rgb(255, 255, 255);">&nbsp; &nbsp;</span><span style="color: inherit; font-family: inherit; font-size: 24px; line-height: 1.1; text-align: center; background-color: rgb(255, 255, 255);"><b>Be Sure to Check out PipkinUK on Social Media</b></span></h3>
+        <p style="text-align: center;"><font color="#000000">And because we know you’ll love the coconut aroma, the sweet taste and the nutritional boost that one jar will never be enough, when you buy a pack of 11 we will give you 1 jar of Pipkin completely FREE.</font></p>
+        <p style="text-align: center;">Keep scrolling for some carefully selected cooking recipes!
+            <br>
+        </p> <a href="http://offer.ebay.co.uk/ws/eBayISAPI.dll?BinConfirm&item=172365332962" class="btn btn-danger btn-lrg" role="button">Buy Now<br></a>
+        <div style="text-align: center;">
+            <marquee behavior="scroll" direction="left" style="background-color: rgb(255, 255, 255);">
+                <br>
+            </marquee>
+        </div>
+        <div style="text-align: center;">
+            <marquee behavior="scroll" direction="left" style="background-color: rgb(255, 255, 255);"><img src="http://justbeauty-uk.s3.amazonaws.com/pipkinbanner2.png" alt="Natural"></marquee>
         </div>
     </div>
-</div>
-<section id="desc" name="desc"></section>
-<!-- INTRO WRAP -->
-<div id="intro">
-    <div class="container-fluid">
-        <div class="row centered">
-            <h1>Learn More about Shills Black Mask</h1></div>
-    </div>
-</div>
-<div id="features">
-    <div class="container-fluid">
+    <div style="text-align: center;">
+        <h3><font color="#339966">Some Other Uses</font><br><br></h3>
         <div class="row">
-            <div class="col-sm-6 "> <img src="http://justbeauty-uk.s3.amazonaws.com/QC595969_3.jpg" class="img-thumbnail" alt="Shills Mask" width="3000" height="800"></div>
-            <div class="col-sm-6">
-                <div class="accordion ac" id="accordion2">
-                    <div class="accordion-group">
-                        <div id="collapseOne" class="accordion-body collapse in">
-                            <div class="accordion-inner">
-                                <p><a class="accordion-toggle" data-toggle="collapse in" data-parent="#accordion2" href="https://system.eu2.netsuite.com/app/common/item/item.nl?id=1014&whence=&cmid=1478956711190_1653&e=T&selectedtab=custom3#collapseTwo" style="font-family: inherit; background-color: rgb(255, 255, 255); color: rgb(192, 57, 43); outline: 0px;">Learn More</a>
-                                    <br>If you’re suffering from blackheads on the nose or in general, using Shills Peel-Off Mask about 2-3 times per week will help you maintain a silky soft skin with clean pores. The first few times that you use the black mask, you will normally be able to extract quite a lot of blackheads at once. The amount of blackheads will decrease as you get into a regular routine with using the cleansing mask. The first thing you’ll notice is the reduced amount of black spots on the nose.&nbsp;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-group">
-                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse in" data-parent="#accordion2" href="#collapseTwo">Numerous Benefit</a></div>
-                        <div id="collapseTwo" class="accordion-body collapse in">
-                            <div class="accordion-inner">
-                                <p>We advise daily use of a good moisturiser to prevent the face skin from producing too much excess oils which tend to clog the pores and cause more blackheads. You won’t be able to eliminated blackheads completely as they are a natural part of the face skin but Shills Black mask is excellent for opening up clogged pores and effectively removing black heads. Through regular use the Black Mask acts as a prevention mechanism to reduce the chances of acne blackouts and in turn reduce the number off blackheads, and generally promote healthier skin in the long run. It really does work.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-group">
-                        <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse in" data-parent="#accordion2" href="#collapseThree">Ingredients &amp; Caution</a></div>
-                        <div id="collapseThree" class="accordion-body collapse in">
-                            <div class="accordion-inner">
-                                <p>Water, Butylene Glycol, Glycerin, Cellulose Gum, Xanthan Gum, Charcoal Powder, Retinyl Palmitate, Tocopheryl Acetate, Lecithin, Peg-8, Arachidyl Propionate, Panthenol, Fragrance, Ethyl Linolenate, Polyvinyl Alcohol, Zinc Gluconate, Methylparaben, Tetrasodium EDTA, Avena Sativa (Oat) Kernel Extract, Calendula Officinalis Flower Extract, Citrus Grandis (Grapefruit) Fruit Extract, Rosmarinus Officinalis (Rosemary) Leaf Extract.</p>
-                                <p><b>For external use only. Avoid contact with eyes, if this occurs, rinse well with lukewarm water. If irritation occurs discontinue use. Keep out of reach of children. Not suitable for sensitive skin.<br></b></p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-sm-3 hidden-xs"> <img src="http://justbeauty-uk.s3.amazonaws.com/sm_puppy.jpg" class="img-responsive" style="width:100%; " alt="Image">
+                <p>
+                    <br>
+                </p>
+            </div>
+            <div class="col-sm-3 hidden-xs "> <img src="http://justbeauty-uk.s3.amazonaws.com/sm_cleaning.jpg" class="img-responsive" style="width:100%" alt="Image">
+                <p>
+                    <br>
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <div class="well">
+                    <p><font size="2">A natural alternative to shaving cream</font></p>
+                </div>
+                <div class="well">
+                    <p><font size="2">As lip balm or hand moisturiser</font></p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="well">
+                    <p><font size="2">In baking for sweet treats</font></p>
+                </div>
+                <div class="well">
+                    <p><font size="2">As a polish for wooden tops and surfaces</font></p>
                 </div>
             </div>
         </div>
+        <hr> </div>
+    <div class="container-fluid text-center">
+        <h3><b>Tasty Recipe Ideas from <font color="#339966">Pipkin</font></b><br><font size="1">&nbsp;</font></h3>
+        <div class="row">
+            <div class="col-sm-4"> <img src="http://justbeauty-uk.s3.amazonaws.com/sm_stir_fry.jpg" class="img-responsive" style="width:100%" alt="Image">
+                <p><b><font color="#339966">Chicken Stir Fry</font></b></p>
+                <p><b><u>Ingredients<br></u></b><span style="line-height: 1.8;">2 tbsp Pipkin Coconut Oil, 450g Boneless Chicken, 2 Garlic Cloves, 1 Onion, 350g Stir Fry, Vegetables, 3 tbsp Soy Sauce, ½ inch Ginger, 1 tbsp sweet and sour, Rice or Noodles to serve.<br></span><b style="line-height: 1.8;"><u>Instructions<br></u></b><span style="line-height: 1.8;">1. Chop and slice the onion. Crush the garlic and peel/grate the ginger. Slice chicken into thin strips.<br></span><span style="line-height: 1.8;">2. Heat half the oil in a wok. Add the chicken and stir-fry for 4-5 minutes until lightly coloured.&nbsp;</span><span style="line-height: 1.8;">Remove from the pan and transfer to a plate. Heat the remaining coconut oil in the pan and add onion, ginger and garlic. Stir-fry for 30 seconds or until softened and add the vegetables.<br></span><span style="line-height: 1.8;">3. Return the chicken to the pan and adding the soy and sauce. Stir until evenly mixed, then cover and cook for a further 2 minutes until the chicken is tender and the veggies are slightly softened.</span></p>
+            </div>
+            <div class="col-sm-4"> <img src="http://justbeauty-uk.s3.amazonaws.com/sm_soup.jpg" class="img-responsive" style="width:100%" alt="Image">
+                <p><b><font color="#339966">Butternut Squash Soup</font></b></p>
+                <p><span style="line-height: 1.8;"><b><u>Ingredients<br></u></b></span><span style="line-height: 1.8;">2 tbsp Pipkin Coconut Oil, 1 Butternut Squash, 1 Onion, 1 Garlic Clove, 3 Rosemary Sprigs, 600ml, Chicken/Vegetable Stock, 150ml White Wine, 100ml Double Cream.<br></span><u style="line-height: 1.8;"><b>Instructions<br></b></u><span style="line-height: 1.8;">Peel and chop the butternut squash, onion and garlic and place into a roasting tin. Add half the coconut oil and rosemary. Roast for 30 mins, turning squash with a slotted spoon halfway through. Check the squash, onion and garlic is golden and soft.<br></span><span style="line-height: 1.8;">2. Remove rosemary and transfer contents to a food processor adding stock, wine and double cream. Add seasoning to taste and whizz up.<br></span><span style="line-height: 1.8;">3. Transfer mixture to a pan, heat up and eat.</span></p>
+            </div>
+            <div class="col-sm-4"> <img src="http://justbeauty-uk.s3.amazonaws.com/sm_cake.jpg" class="img-responsive" style="width:100%" alt="Image">
+                <p><b><font color="#339966">Carrot Cake</font></b></p>
+                <p><span style="line-height: 1.8;"><b><u>Ingredients<br></u></b></span><span style="line-height: 1.8;">1 ½ cups flour, 1 ½ tsp baking powder, ½ tsp baking soda, 1 ½ tsp ground cinnamon, ½ tsp ground nutmeg, ¼ tsp salt, 1 tbsp coconut oil.<br></span><b style="line-height: 1.8;"><u>Instructions<br></u></b><span style="line-height: 1.8;">1. Preheat the oven to 180c, and coat a baking tray with Pipkin.<br></span><span style="line-height: 1.8;">2. Whisk together the flour, baking powder, baking soda, ground cinnamon, nutmeg and salt in a medium bowl. In a separate bowl, whisk together the coconut oil, egg, and vanilla. Stir in the maple syrup and Greek yogurt, thoroughly mixing until smooth. Add the flour mixture and milk, until flour mixture is incorporated. &nbsp;Fold in the carrots.<br></span><span style="line-height: 1.8;">3. Spread batter into tray and bake at 180c for 30 minutes, or until a toothpick inserted into the centre comes out clean. Cool completely to room temperature before frosting.</span></p>
+            </div>
+        </div>
     </div>
-</div>
-<meta charset="utf-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
- <meta name="description" content="USB Power Bank, 20000mAh, dual-port including 2.1A charging.">
- <meta name="author" content="Slowpreneur Inc">
- <!-- Bootstrap core CSS -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
- <style>.btn{margin-bottom:4px !important}</style>
- <!-- see glyficons http://getbootstrap.com/components/#glyphicons -->
- 
- 
- <div class="container-wide">
-  <h3><span class="glyphicon glyphicon-th-list"></span> Overview</h3>
-   <div class="panel panel-default">
-    <div class="panel-body">
-     <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12">
-       <h4>Contents:</h4>
-       <ul class="list-group">
-        <li class="list-group-item active"><b>20000mAh Power Bank</b><br>2.1A &amp; 1A Dual Charging</li>
-        <li class="list-group-item list-group-item-info">Type-A to Micro-B USB Charging Cable, 1 ft length<br><i>(no wall adapter provided)</i></li>
-        <li class="list-group-item active"><b>ShuoGe 24W Car Charger</b><br>2.1A &amp; 1A Dual Charging</li>
-        <li class="list-group-item list-group-item-info">Black Drawstring Carry Bag</li>
-       </ul>
-      </div>
-      <div class="col-md-push-3 col-md-3 col-sm-6 col-xs-12">
-       <h4>Compatible Devices:</h4>
-       <button class="btn btn-default">iPhone 4/5/6/7 (Plus)</button>
-       <button class="btn btn-default">iPad (all, Pro, Mini)</button>
-       <button class="btn btn-default">iPad Air 1/2</button>
-       <button class="btn btn-default">iPod Touch (all)</button>
-       <button class="btn btn-default">Samsung Galaxy S/J (all)</button>
-       <button class="btn btn-default">Galaxy Grand (all)</button>
-       <button class="btn btn-default">Galaxy Note (all)</button>
-       <button class="btn btn-default">Nexus 5/6/5X/6P</button>
-       <button class="btn btn-default">Google Pixel</button>
-      </div>
-      <div class="clearfix col-sm-12 visible-sm"></div> <!-- sm clearfix helper -->
-      <div class="col-md-pull-3 col-md-3 col-sm-6 col-xs-12">
-       <h4>Condition:</h4>
-       <button class="btn btn-block btn-success">New</button>
-       <button class="btn btn-block btn-success">Quality Tested</button>
-       <button class="btn btn-block btn-success">No Packaging</button>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
-       <h4>Benefits:</h4>
-       <ul>
-        <li>Save <strong class="text-danger">25% off retail</B></li><strong class="text-danger"><strong class="text-danger">
-        <li>Supports faster charging via 2.1A output</li>
-        <li>Slim 6" x 3" x 0.5" battery size</li>
-        <li>25/50/75/100% charge indicators</li>
-        <li>Aluminum power bank</li>
-        <li>Recharge phone ~5 times</li>
-        <li>Recharge tablet ~3 times</li>
-        <li>Built-In LED flashlight <em class="text-muted">(depress button for 1 second)</I></li><em class="text-muted"><em class="text-muted">
-       </I></I></B></B></ul><strong class="text-danger"><strong class="text-danger"><em class="text-muted"><em class="text-muted"><strong class="text-danger"><em class="text-muted">
-      </I></B></I></I></B></B></div><strong class="text-danger"><strong class="text-danger"><em class="text-muted"><em class="text-muted"><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted">
-     </I></B></I></B></I></I></B></B></div><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted">
-    </I></B></I></B></I></B></I></B></div><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted">
-   </I></B></I></B></I></B></I></B></div><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted"><strong class="text-danger"><em class="text-muted"><br>
- 
- 
- <h3><span class="glyphicon glyphicon-thumbs-up"></span> Quality Control Testing</h3>
- <p class="lead">All Beauty products and electronics are thoroughly tested for the following before sale:<br><strong class="text-danger" style="font-size: 14px; font-style: normal;"><em class="text-muted"></I></B></p><p class="lead" style="display: inline !important;"><strong class="text-danger" style="font-size: 14px; font-style: normal;"><em class="text-muted">For Electronincs;&nbsp;</I></B></p><strong class="text-danger" style="font-size: 14px; font-style: normal;"><em class="text-muted">
-  <ul>
-   <li>Verify USB ports charge individually</li>
-   <li>Verify USB ports charge simultaneously <em class="text-muted">(see photo above)</I></li><em class="text-muted"><em class="text-muted">
-   <li>Verify power banks recharge</li>
-   <li>Verify power banks hold/retain recharge</li>
-   <li>Verify voltage above 1A from 2.1A port</li>
- </I></I></ul><em class="text-muted"><em class="text-muted"><em class="text-muted">
-<br><br>
- 
- <h3><span class="glyphicon glyphicon-folder-close"></span> Packaging</h3>
-   <table class="table table-hover">
-    <thead><tr><th>Height</th><th>Packaging</th></tr></thead>
-    <tbody>
-     <tr><td>&lt; 1 inch</td><td>Bubble Mailer</td></tr>
-     <tr><td>&gt; 1 inch</td><td>Cardboard Box</td></tr>
-    </tbody>
-   </table>
- <h3><span class="glyphicon glyphicon-envelope"></span> Shipments</h3><br>
- <ul>
-  <h4><span class="glyphicon glyphicon-time"></span> Handling</h4>
-  <p>We will ship all orders within <mark>1 business day</mark> of payment.</p><br>
-   <h4><span class="glyphicon glyphicon-send"></span> Delivery</h4>
-   <p>Shipping <b>is included</b> for free with your purchase:</p>
-   <div class="panel panel-default">
-    <div class="panel-body">
-     <table class="table table-hover">
-      <thead><tr><th>Weight</th><th>Shipper</th><th>Service</th><th>Delivery Time</th></tr></thead>
-      <tbody>
-       <tr><td>&lt;= 13 ounces</td><td>USPS</td><td>First Class Package</td><td>2-3 business days*</td></tr>
-       <tr><td>&gt; than 13 ounces</td><td>USPS</td><td>Priority Mail</td><td>1-3 business days*</td></tr>
-      </tbody>
-     </table>
-     <small>*Delivery times are <i>after handling</i>. Times determined by carrier and are subject to change.</small>
-    </div>
-   </div>
- </ul><br>
- 
- 
- <h3><span class="glyphicon glyphicon-usd"></span> Payment</h3>
- <p>We accept PayPal.</p><br>
- 
- 
- <h3><span class="glyphicon glyphicon-ok-circle"></span> Return Policy</h3>
- <p>All of our items are backed by eBay's 14-day return policy. <mark>Buyer is responsible for return shipping</mark>.</p><br>
- 
- 
- <h3><span class="glyphicon glyphicon-comment"></span> Feedback</h3>
- <p>We take our reputation seriously. If you are unsatisfied by your order, please contact us and we will work with you to resolve it to your satisfaction.</p>
-<!-- /container -->
-</I></I></I></I></B></I></B></I></B></I></B></I></B></div>
+</meta="">
